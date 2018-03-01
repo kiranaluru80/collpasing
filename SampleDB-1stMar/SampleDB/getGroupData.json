@@ -1,0 +1,225 @@
+﻿[
+
+  {
+
+    "Request_ID": 10009,
+
+    "Requested_By": "CONED\\AZMIM",
+
+    "Description": "undefined",
+
+    "CreatedDate": "2016-08-03T17:19:54.813",
+
+    "Group": {
+
+      "Group_ID": 18,
+
+      "GroupName": "Electric Ops Users",
+
+      "GroupDesc": null,
+
+      "ModifiedDate": null,
+
+      "GroupType": null,
+
+      "MajorGroup_Id": "706",
+
+      "Org_Id": "706",
+
+      "Permissions": null,
+
+      "Active": null,
+
+      "Status": null
+
+    },
+
+    "MajorGroup_Id": null,
+
+    "User": {
+
+      "CompanyId": 1,
+
+      "UserRole": null,
+
+      "Emp_Id": 87172,
+
+      "FirstName": "Mohammad",
+
+      "LastName": "Azmi",
+
+      "UserTitle": null,
+
+      "Email": "AzmiM@coned.com",
+
+      "User_ID": "CONED\\AZMIM",
+
+      "FullName": "Azmi Mohammad",
+
+      "MajorGroup_Id": "705",
+
+      "Org_Id": "705",
+
+      "Dept_Id": "137",
+
+      "Section_Id": "976",
+
+      "SecurityUserID": 18
+
+    },
+
+    "Org_Id": null,
+
+    "Active": null
+
+  },
+
+  {
+
+    "Request_ID": 10011,
+
+    "Requested_By": "CONED\\DEEVELAV",
+
+    "Description": "asdsas",
+
+    "CreatedDate": "2016-11-30T09:50:45.157",
+
+    "Group": {
+
+      "Group_ID": 18,
+
+      "GroupName": "Electric Ops Users",
+
+      "GroupDesc": null,
+
+      "ModifiedDate": null,
+
+      "GroupType": null,
+
+      "MajorGroup_Id": "706",
+
+      "Org_Id": "706",
+
+      "Permissions": null,
+
+      "Active": null,
+
+      "Status": null
+
+    },
+
+    "MajorGroup_Id": null,
+
+    "User": {
+
+      "CompanyId": 101,
+
+      "UserRole": null,
+
+      "Emp_Id": 964,
+
+      "FirstName": "Venkata",
+
+      "LastName": "Deevela",
+
+      "UserTitle": null,
+
+      "Email": "DEEVELAV@coned.com",
+
+      "User_ID": "CONED\\DEEVELAV",
+
+      "FullName": "Deevela Venkata",
+
+      "MajorGroup_Id": "705",
+
+      "Org_Id": "705",
+
+      "Dept_Id": "137",
+
+      "Section_Id": "976",
+
+      "SecurityUserID": 18
+
+    },
+
+    "Org_Id": null,
+
+    "Active": null
+
+  },
+
+  {
+
+    "Request_ID": 10023,
+
+    "Requested_By": "CONED\\REDDYRA",
+
+    "Description": "jsse report",
+
+    "CreatedDate": "2017-08-11T10:14:46.8",
+
+    "Group": {
+
+      "Group_ID": 18,
+
+      "GroupName": "Electric Ops Users",
+
+      "GroupDesc": null,
+
+      "ModifiedDate": null,
+
+      "GroupType": null,
+
+      "MajorGroup_Id": "706",
+
+      "Org_Id": "706",
+
+      "Permissions": null,
+
+      "Active": null,
+
+      "Status": null
+
+    },
+
+    "MajorGroup_Id": null,
+
+    "User": {
+
+      "CompanyId": 101,
+
+      "UserRole": null,
+
+      "Emp_Id": 1603,
+
+      "FirstName": "Ravi Kiran",
+
+      "LastName": "Reddy",
+
+      "UserTitle": null,
+
+      "Email": "REDDYRA@coned.com",
+
+      "User_ID": "CONED\\REDDYRA",
+
+      "FullName": "Reddy Ravi Kiran",
+
+      "MajorGroup_Id": "705",
+
+      "Org_Id": "705",
+
+      "Dept_Id": "137",
+
+      "Section_Id": "976",
+
+      "SecurityUserID": 18
+
+    },
+
+    "Org_Id": null,
+
+    "Active": null
+
+  }
+
+]

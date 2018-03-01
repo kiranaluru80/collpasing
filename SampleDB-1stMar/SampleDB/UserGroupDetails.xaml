@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SampleDB.UserGroupDetails">
+    <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}" HorizontalOptions = "FillAndExpand" VerticalOptions="FillAndExpand" Spacing="0" Padding="0,20,0,0">
+            <StackLayout Margin="10,10,10,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions ="FillAndExpand">
+                <Grid  RowSpacing = "0" ColumnSpacing ="5" VerticalOptions="FillAndExpand" x:Name = "gridRef" HorizontalOptions ="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height ="30"/>
+                        <RowDefinition Height ="30"/>
+                        <RowDefinition Height ="30"/>
+                        <RowDefinition Height ="30" />
+                        <RowDefinition Height ="30"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label FontSize="13" VerticalOptions ="Start" Text="User Name" TextColor="Silver" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="Created Date" TextColor="Silver" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="{Binding User.FullName}" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="{Binding CreatedDate}" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center" />
+
+                    <Label FontSize="13" VerticalOptions ="Start" Text="Email" TextColor="Silver" Grid.Row="2" Grid.Column="0" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="User ID" TextColor="Silver" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="{Binding User.Email}" Grid.Row="3" Grid.Column="0" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="{Binding User.User_ID}" Grid.Row="3" Grid.Column="1" VerticalTextAlignment="Center" />
+
+                    <Label FontSize="13" VerticalOptions ="Start" Text="Group Name" TextColor="Silver" Grid.Row="4" Grid.Column="0" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="MajorGroup Id" TextColor="Silver" Grid.Row="4" Grid.Column="1" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="{Binding Group.GroupName}" Grid.Row="5" Grid.Column="0" VerticalTextAlignment="Center" />
+                    <Label FontSize="13" VerticalOptions ="Start" Text="{Binding Group.MajorGroup_Id}" Grid.Row="5" Grid.Column="1" VerticalTextAlignment="Center" />
+
+
+                </Grid>
+                <StackLayout HorizontalOptions ="FillAndExpand" Orientation ="Horizontal" VerticalOptions ="End" Spacing ="10" Padding ="0,0,0,20">
+                <Button HorizontalOptions ="FillAndExpand" VerticalOptions = "End" Text = "Deny" FontSize ="20" BackgroundColor = "Gray" TextColor = "White" />
+                <Button x:Name ="grantRef" HorizontalOptions ="FillAndExpand" VerticalOptions = "End" Text = "Grant" FontSize ="20" BackgroundColor = "Blue" TextColor = "White" />
+                 </StackLayout>  
+            </StackLayout>
+        </StackLayout>
+        <StackLayout BackgroundColor="#90000000" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  x:Name="activityIndicatorLayout" IsVisible="false"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}">
+    <ActivityIndicator Color="White" IsVisible="true" IsRunning="true" HorizontalOptions="Center" VerticalOptions="FillAndExpand" x:Name="actIndicator" />
+    </StackLayout>
+
+     <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="End"  x:Name="alertViewRef" IsVisible="false"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}">
+            <Frame HorizontalOptions = "FillAndExpand" VerticalOptions ="End" HasShadow ="false" Margin ="10,0,10,10" OutlineColor ="Silver">
+            <StackLayout HorizontalOptions = "FillAndExpand" VerticalOptions = "End" Spacing ="20" >
+               <Label Text ="Are you sure to deny access to Birdie Cole for Group EH&amp;S user?"/>
+               <StackLayout HorizontalOptions ="FillAndExpand" VerticalOptions ="Fill" Orientation ="Horizontal" Spacing ="10">
+                <Button x:Name ="alertNoRef" HorizontalOptions ="FillAndExpand" VerticalOptions = "End" Text = "No" FontSize ="20" BackgroundColor = "Gray" TextColor = "White" Grid.Row="6" Grid.Column="0"/>
+                <Button HorizontalOptions ="FillAndExpand" VerticalOptions = "End" Text = "Yes" FontSize ="20" BackgroundColor = "Blue" TextColor = "White" Grid.Row="6" Grid.Column="1"/>
+               </StackLayout>
+            </StackLayout>
+            </Frame>
+    </StackLayout>
+        
+    </RelativeLayout>
+</ContentPage>
